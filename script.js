@@ -11,7 +11,7 @@ const PROJECTS = [
   {
     title: "Djangobnb",
     description: "A full-stack Airbnb clone with Next.js and Django — property listings, date-range reservation booking, live chat between users, and property favoriting.",
-    stack: ["Next.js", "TypeScript", "Django", "React"],
+    stack: ["Next.js", "React", "TypeScript", "Django", "DjangoREST", "Tailwind"],
     github: "https://gitlab.com/coelho109.bcl/next.js-and-django-fullstack-airbnb-clone",
     demo: "https://next-js-and-django-fullstack-airbnb.vercel.app",
   },
