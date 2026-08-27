@@ -5,7 +5,7 @@
 const EMAIL = "hello@example.com";
 const GITHUB = "https://github.com/";
 const LINKEDIN = "https://linkedin.com/in/";
-const RESUME = "./David_Coelho_CV.pdf"; // Path/URL to your resume PDF
+const RESUME = "./David_Coelho_CV_current.pdf"; // Path/URL to your resume PDF
 
 const PROJECTS = [
   {
