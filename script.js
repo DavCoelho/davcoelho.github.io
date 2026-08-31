@@ -14,7 +14,7 @@ const PROJECTS = [
     stack: ["Next.js", "React", "TypeScript", "Django", "DjangoREST", "Tailwind"],
     github: "https://gitlab.com/coelho109.bcl/next.js-and-django-fullstack-airbnb-clone",
     demo: "https://next-js-and-django-fullstack-airbnb.vercel.app",
-    image: "./images/djangobnb.png", // Add a screenshot here
+    image: "./djangobnb.png", // Add a screenshot here
   },
 ];
  
