@@ -47,7 +47,7 @@ img { max-width: 100%; display: block; }
  
 .container { width: 100%; max-width: var(--max); margin: 0 auto; padding: 0 1.25rem; }
 .narrow { max-width: 760px; }
-.section { padding: 4.5rem 0; }
+.section { padding: 7rem 0; }
 .muted { color: var(--muted); }
 .lead { font-size: 1.05rem; }
  
@@ -70,7 +70,7 @@ img { max-width: 100%; display: block; }
  
 .hero {
   position: relative;
-  padding: 8rem 0 4rem;
+  padding: 10rem 0 6rem;
   text-align: center;
   background: var(--bg);
   overflow: hidden;
