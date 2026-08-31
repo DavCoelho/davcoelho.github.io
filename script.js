@@ -14,6 +14,7 @@ const PROJECTS = [
     stack: ["Next.js", "React", "TypeScript", "Django", "DjangoREST", "Tailwind"],
     github: "https://gitlab.com/coelho109.bcl/next.js-and-django-fullstack-airbnb-clone",
     demo: "https://next-js-and-django-fullstack-airbnb.vercel.app",
+    image: "./djangobnb.png", // Add a screenshot here
   },
 ];
  
@@ -63,13 +64,16 @@ const escape = (value) =>
  
 document.getElementById("projects-grid").innerHTML = PROJECTS.map(
   (project) => `
-    <article class="card">
-      <h3>${escape(project.title)}</h3>
-      <p>${escape(project.description)}</p>
-      <ul class="tags">${project.stack.map((tech) => `<li>${escape(tech)}</li>`).join("")}</ul>
-      <div class="card-links">
-        <a href="${escape(project.github)}" target="_blank" rel="noreferrer noopener">Code</a>
-        <a href="${escape(project.demo)}" target="_blank" rel="noreferrer noopener">Live demo</a>
+    <article class="card card-project">
+      ${project.image ? `<div class="card-image"><img src="${escape(project.image)}" alt="${escape(project.title)} preview" loading="lazy" /></div>` : ""}
+      <div class="card-body">
+        <h3>${escape(project.title)}</h3>
+        <p>${escape(project.description)}</p>
+        <ul class="tags">${project.stack.map((tech) => `<li>${escape(tech)}</li>`).join("")}</ul>
+        <div class="card-links">
+          ${project.github ? `<a href="${escape(project.github)}" target="_blank" rel="noreferrer noopener">GitHub →</a>` : ""}
+          ${project.demo ? `<a class="btn btn-primary" href="${escape(project.demo)}" target="_blank" rel="noreferrer noopener">Demo</a>` : ""}
+        </div>
       </div>
     </article>`,
 ).join("");
