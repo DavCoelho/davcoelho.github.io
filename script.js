@@ -21,7 +21,7 @@ const PROJECTS = [
 const SKILLS = [
   { group: "Frontend", items: ["HTML5", "CSS3", "JavaScript", "TypeScript", "React", "Next.js", "Redux", "Tailwind"] },
   { group: "Backend", items: ["Node.js", "Nest", "Python", "Django", "PostgreSQL", "Redis", "REST", "Numpy", "Pandas"] },
-  { group: "Tools", items: ["Git", "VSCode", "GitLab", "GitHub", "Docker"] },
+  { group: "Tools", items: ["Git", "VSCode", "GitLab", "GitHub", "Docker", "GitHub Copilot", "OpenAI API"] },
 ];
  
 const EXPERIENCE = [
