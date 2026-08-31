@@ -14,7 +14,7 @@ const PROJECTS = [
     stack: ["Next.js", "React", "TypeScript", "Django", "DjangoREST", "Tailwind"],
     github: "https://gitlab.com/coelho109.bcl/next.js-and-django-fullstack-airbnb-clone",
     demo: "https://next-js-and-django-fullstack-airbnb.vercel.app",
-    image: "./djangobnb.png", // Add a screenshot here
+    image: "./images/djangobnb.png", // Add a screenshot here
   },
 ];
  
@@ -97,7 +97,7 @@ document.getElementById("experience-list").innerHTML = EXPERIENCE.map(
  
 document.getElementById("year").textContent = new Date().getFullYear();
  
-document.getElementById("email-link").href = `mailto:${EMAIL}`;
+document.getElementById("email-link").href = `https://mail.google.com/mail/?view=cm&to=${EMAIL}`;
 document.getElementById("github-link").href = GITHUB;
 document.getElementById("linkedin-link").href = LINKEDIN;
  
@@ -111,13 +111,13 @@ if (RESUME) {
   resumeLinkMobile.parentElement.style.display = "none";
 }
  
-/* Contact form -> opens the visitor's mail client */
+/* Contact form -> opens Gmail compose with pre-filled fields */
 document.getElementById("contact-form").addEventListener("submit", (event) => {
   event.preventDefault();
   const data = new FormData(event.currentTarget);
   const subject = encodeURIComponent(`Portfolio contact from ${data.get("name")}`);
   const body = encodeURIComponent(`${data.get("message")}\n\n— ${data.get("email")}`);
-  window.location.href = `mailto:${EMAIL}?subject=${subject}&body=${body}`;
+  window.open(`https://mail.google.com/mail/?view=cm&to=${EMAIL}&su=${subject}&body=${body}`, "_blank");
 });
  
 /* Navbar scroll state */
