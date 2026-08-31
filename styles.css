@@ -89,7 +89,7 @@ img { max-width: 100%; display: block; }
   gap: 0.75rem;
 }
 .avatar {
-  width: min(437px, 80vw);
+  width: min(220px, 80vw);
   height: auto;
   aspect-ratio: 1 / 1;
   border-radius: 50%;

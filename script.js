@@ -30,8 +30,9 @@ const EXPERIENCE = [
     company: "Wish and Cook",
     period: "02/2026 — Present",
     points: [
-      "Contributing full-stack (NestJS/Next.js) to a production robotic cooking automation platform, including a frontend design-system migration and end-to-end debugging of a real-time notification pipeline.",
-      "Designed UI/UX for a tablet-based field maintenance application, including a dark-mode design system and high-fidelity dashboard mockups.",
+      "Migrated the platform's frontend to a new design system, overhauling the visual identity and component library across the full application.",
+      "Delivered a real-time notification feature end-to-end — from UI design through backend integration to a WebSocket-based pipeline — as the first major feature shipped in this role.",
+      "Designing UI/UX for a tablet-based field maintenance application, including a dark-mode design system and high-fidelity dashboard mockups.",
     ],
   },
   {
@@ -50,6 +51,7 @@ const EXPERIENCE = [
     points: [
       "Designed and maintained responsive web interfaces in React, implementing dynamic UI components, application state management, and API integration.",
       "Built backend systems and RESTful APIs using Django and Django REST Framework, including server-side logic and database integration.",
+      "Leveraged the OpenAI API to process and structure recipe data into machine-readable cooking instructions — parsing natural language into discrete robotic actions (heat, stir, temperature, duration, vessel) consumed directly by the kitchen automation system.",
       "Developed data analysis pipelines and mathematical algorithms in Python (Pandas, NumPy).",
     ],
   },
